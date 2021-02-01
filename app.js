@@ -1,14 +1,14 @@
 const { app, BrowserWindow , Menu } = require('electron');
-const path = require('path');
+//const path = require('path');
 
 function createWindow() {
     const win = new BrowserWindow({
         width: 1000,
         height: 600,
-        titleBarStyle: 'hidden',
+        //titleBarStyle: 'hidden',
         frame: false,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'),
+          //  preload: path.join(__dirname, 'preload.js'),
             enableRemoteModule: true,
             nodeIntegration: true
         }

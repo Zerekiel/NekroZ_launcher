@@ -1,7 +1,11 @@
 const customTitlebar = require('custom-electron-titlebar');
 
-//window.addEventListener('readystatechange', () => {
-window.onload = () => {
+
+window.addEventListener('load', () => {
+  document.getElementById('body').className += 'loaded';
+})
+
+window.addEventListener('load', () => {
   new customTitlebar.Titlebar({
     backgroundColor: customTitlebar.Color.fromHex('#25294A')
   });
@@ -14,4 +18,5 @@ window.onload = () => {
   for (const type of ['chrome', 'node', 'electron']) {
     replaceText(`${type}-version`, process.versions[type])
   }*/
-} //)
+});
+
