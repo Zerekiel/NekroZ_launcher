@@ -16,7 +16,7 @@ function createWindow() {
 
     Menu.setApplicationMenu(null);
     win.loadFile('view/home.html');
-    win.webContents.openDevTools();
+    //win.webContents.openDevTools();
 }
 
 

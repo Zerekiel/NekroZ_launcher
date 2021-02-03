@@ -7,12 +7,17 @@
   }
 }
 
+@font-face {
+    font-family: 'GlobalFont';
+    src: url(../font/Rashkey.ttf) format('truetype');
+}
+
 html {
     height: 100%;
 }
 
 body {
-    background-color: #001e45;
+    background-color: #001845;
     margin: 0;
     height: 100%;
 }
@@ -26,7 +31,12 @@ body {
     position: fixed;
     height: 32px;
     width: calc(100% - 2px);
-    background: #00193b;
+    background: #001845;
+}
+
+#window-title h1 {
+    margin: 3px 0 0 3px;
+    font-family: GlobalFont;
 }
 
 #titlebar #drag-region {
@@ -134,24 +144,35 @@ body {
 
 #general {
     height: calc(100% - 32px);
-    /*margin-top: 32px;*/
     padding-top: 32px;
     overflow-y: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0 30px 0 0;
-    background-color: #00193b;
+    background-color: #001233;
+}
+
+.firstHalf {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav .button {
     margin: 10px;
     background-color: transparent;
     border: none;
+}
+
+.nav .button img {
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -163,4 +184,9 @@ body {
 .news {
     display: flex;
     flex-direction: column;
+    background-color: #001233;
+}
+
+span, h2, h1, p {
+    color: #979DAC;
 }
