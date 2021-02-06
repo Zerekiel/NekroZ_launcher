@@ -199,9 +199,8 @@ body {
     margin-left: 100px;
     /* background: transparent; */
     border: none;
-    background: white;
-    color: #979DAC;
-    filter: invert(1);
+    background-color: white;
+    /* color: #979DAC; */
     font-size: large;
     font-family: GlobalFont;
     width: 150px;
