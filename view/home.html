@@ -11,29 +11,75 @@
 
 <body>
 
+    <header id="titlebar">
+        <div id="drag-region">
 
-    <div class="general">
+            <div id="window-title">
+                <h1>NekroZ</h1>
+            </div>
 
+            <div id="window-controls">
+
+                <div class="button" id="min-button">
+                  <img class="icon" srcset="icons/titlebar/min-w-10.png 1x, icons/titlebar/min-w-12.png 1.25x, icons/titlebar/min-w-15.png 1.5x, icons/titlebar/min-w-15.png 1.75x, icons/titlebar/min-w-20.png 2x, icons/titlebar/min-w-20.png 2.25x, icons/titlebar/min-w-24.png 2.5x, icons/titlebar/min-w-30.png 3x, icons/titlebar/min-w-30.png 3.5x" draggable="false" />
+                </div>
+          
+                <div class="button" id="max-button">
+                  <img class="icon" srcset="icons/titlebar/max-w-10.png 1x, icons/titlebar/max-w-12.png 1.25x, icons/titlebar/max-w-15.png 1.5x, icons/titlebar/max-w-15.png 1.75x, icons/titlebar/max-w-20.png 2x, icons/titlebar/max-w-20.png 2.25x, icons/titlebar/max-w-24.png 2.5x, icons/titlebar/max-w-30.png 3x, icons/titlebar/max-w-30.png 3.5x" draggable="false" />
+                </div>
+          
+                <div class="button" id="restore-button">
+                  <img class="icon" srcset="icons/titlebar/restore-w-10.png 1x, icons/titlebar/restore-w-12.png 1.25x, icons/titlebar/restore-w-15.png 1.5x, icons/titlebar/restore-w-15.png 1.75x, icons/titlebar/restore-w-20.png 2x, icons/titlebar/restore-w-20.png 2.25x, icons/titlebar/restore-w-24.png 2.5x, icons/titlebar/restore-w-30.png 3x, icons/titlebar/restore-w-30.png 3.5x" draggable="false" />
+                </div>
+          
+                <div class="button" id="close-button">
+                  <img class="icon" srcset="icons/titlebar/close-w-10.png 1x, icons/titlebar/close-w-12.png 1.25x, icons/titlebar/close-w-15.png 1.5x, icons/titlebar/close-w-15.png 1.75x, icons/titlebar/close-w-20.png 2x, icons/titlebar/close-w-20.png 2.25x, icons/titlebar/close-w-24.png 2.5x, icons/titlebar/close-w-30.png 3x, icons/titlebar/close-w-30.png 3.5x" draggable="false" />
+                </div>
+          
+              </div>
+
+        </div>
+    </header>
+
+    <div id="general">
         <div class="nav">
-            <button>Accueil</button>
-            <button>News</button>
-            <button>Events</button>
-            <button>Réglages</button>
-            <button type="button">Click Me!</button>
+            <button class="button">
+                <img src="icons/nav/home.png">
+            </button>
+                <div class="firstHalf">
+                    <button class="button">
+                        <img src="icons/nav/news.png">
+                    </button>
+                    <button class="button">
+                        <img src="icons/nav/event.png">
+                    </button>
+                </div>
+            <button class="button">
+                <img src="icons/nav/settings.png">
+            </button>
         </div>
 
-        <div class="main">
-            <h1>NekroZ</h1>
-            <button>PLAY</button>
-        </div>
+        <div class="secondHalf">
+            <div class="main">
+                <h1>Une pandemie est apparue...</h1>
+                <h1>Votre equipe vous attend !!</h1>
+                <button>PLAY</button>
+            </div>
 
-        <div class="news">
-            <p>news</p>
+            <div class="infos">
+                <div class="news">
+                    <p>News</p>
+                </div>
+                <div class="events">
+                    <p>Events</p>
+                </div>
+            </div>
         </div>
-
     </div>
 
-
+    <script>
+        require('./js/renderer.js');
+    </script>
 </body>
 
 </html>
