@@ -197,9 +197,11 @@ body {
 .main button {
     margin-top: 30px;
     margin-left: 100px;
-    background: transparent;
-    border: solid white;
+    /* background: transparent; */
+    border: none;
+    background: white;
     color: #979DAC;
+    filter: invert(1);
     font-size: large;
     font-family: GlobalFont;
     width: 150px;
