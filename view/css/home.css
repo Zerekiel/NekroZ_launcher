@@ -190,7 +190,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 198px 30px 104px 200px;
+    margin: 198px 30px 104px 30px;
     font-family: GlobalFont;
 }
 
