@@ -227,6 +227,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    font-family: GlobalFont;
 }
 
 span, h2, h1, p {
