@@ -1,0 +1,11 @@
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.data .news1, .data .news2, .data .news3, .data .news4 {
+    background-color: #24263D;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+}
