@@ -19,7 +19,6 @@ function createWindow() {
     win.webContents.openDevTools();
 }
 
-
 app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {

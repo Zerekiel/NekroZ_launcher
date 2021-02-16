@@ -32,6 +32,7 @@ function handleWindowControls() {
     });
 
     document.getElementById('close-button').addEventListener("click", event => {
+        localStorage.clear();
         win.close();
     });
 
