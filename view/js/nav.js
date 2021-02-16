@@ -13,7 +13,6 @@ window.onload = () => {
     if ((navPosition = localStorage.getItem("navPosition")) == undefined) {
         navPosition = 0;
     }
-    myConsole.log(navPosition);
     nav[navPosition].classList.add('button--visible');
 }
 
