@@ -37,15 +37,20 @@ body {
     flex-direction: column;
 }
 
-.nav .button {
+.nav .button__item {
     margin: 10px;
     background-color: transparent;
     border: none;
 }
 
-.nav .button img {
+.nav .button__item img {
     width: 40px;
     height: 40px;
+    opacity: 0.5;
+}
+
+.nav .button--visible img {
+    opacity: 1;
 }
 
 .secondHalf {

@@ -3,6 +3,10 @@ const remote = require('electron').remote;
 const win = remote.getCurrentWindow(); /* Note this is different to the
 html global `window` variable */
 
+var nodeConsole = require('console');
+var myConsole = new nodeConsole.Console(process.stdout, process.stderr);
+
+
 // When document has loaded, initialise
 document.onreadystatechange = (event) => {
     if (document.readyState == "complete") {
@@ -32,6 +36,7 @@ function handleWindowControls() {
     });
 
     document.getElementById('close-button').addEventListener("click", event => {
+        localStorage.removeItem("navPosition")
         win.close();
     });
 
