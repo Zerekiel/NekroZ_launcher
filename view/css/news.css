@@ -5,6 +5,7 @@
     margin: 0px 15px;
     height: 100%;
     width: 100%;
+    margin-right: 30px;
 }
 
 .news1, .news2, .news3, .news4 {
@@ -12,7 +13,7 @@
     height: 100px;
     width: 100%;
     margin: 10px;
-    border-radius: 10px;    
+    border-radius: 10px;  
 }
 
 .news1 h2, .news2 h2, .news3 h2, .news4 h2 {
